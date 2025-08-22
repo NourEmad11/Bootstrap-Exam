@@ -1,0 +1,673 @@
+body{
+    height: 4000px;
+   
+   
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+span::selection{
+background-color: transparent;
+color:rgba(0, 0, 0, 0.056);
+}
+*::selection{
+background-color: #000;
+color:white;
+}
+
+.bg-color{
+    background-color: #636363;
+}  
+.bg-plain{
+    background-color: #F7F7F7;
+}
+/*------------------------- Navbar ---------------------*/
+.icons i{
+    color:#1C2427;
+}
+.icons i:hover{
+    color:#787878 ;
+}
+.navbar .navbar-brand a{
+font-family:'Source Sans Pro', sans-serif;
+
+}
+.navbar-nav a{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-nav a:hover{
+    color:#787878 ;
+}
+.navbar li{
+    font-size: 13px;
+}
+
+/*---------------------Header--------------------*/
+header{
+    padding-block: 250px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.448) ,rgba(0,0,0,0.2)) , url("images/bg-image-29.jpg");
+    height: 100vh; 
+    background-size: cover ;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+background-attachment: scroll;
+   
+}
+
+header h1{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 64px;
+    opacity: 0;
+    animation: popUp 0.8s ease forwards;
+    animation-delay: 1s; 
+   
+  
+}
+header h4{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+    opacity: 0;
+    animation: popUp 0.8s ease forwards;
+    animation-delay: 2s;
+}
+.btns .btn1{
+    position: relative; 
+    overflow: hidden;   
+    padding:15px 30px;
+    background-color: #00D5ED;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    transition: transform 0.1s ;
+    opacity: 0;
+    animation: popUp 0.8s ease forwards;
+  animation-delay: 3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.393);
+    cursor: pointer;
+}
+
+.btns .btn1::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 100%;
+    transform: skewX(-20deg);
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+}
+
+.btns .btn1:hover::after {
+    left: 100%;
+    transition: left 0.7s ease;
+    transition-delay: 0.1s;
+}
+.btns .btn2{
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    color:white;
+    transition: transform 0.5s;
+    transition: background-color 0.5;
+    border: 2px solid white;
+    opacity: 0;
+    animation: popUp 0.8s ease forwards;
+    animation-delay: 3s;
+    
+}
+.btn2:hover{
+    transform: translateY(-1px);
+    background-color: white;
+    color: black;
+}
+.header2{
+    padding-block: 250px;
+    background-image:linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.2)) , url("images/bg-image-28.jpg");
+    height: 100vh; 
+    background-size: cover ;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    
+   
+}
+.header2 h1{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 80px;
+    opacity: 0;
+    animation: popUp 0.8s ease forwards;
+    animation-delay: 1s; 
+}
+.header2 h4{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+    opacity: 0;
+    animation: popUp 0.8s ease forwards;
+    animation-delay: 2s; 
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;               
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;                  
+    z-index: 10;
+  }
+  
+  .carousel-controls button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+   
+  }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  
+.navbar-brand img {
+max-width: 150px; 
+height: auto;
+}
+/*----------------------Header carousel------------------*/
+.controls .layer{
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: white;
+    opacity: 1;
+    transform: translateX(-100%);
+    pointer-events: none; 
+    color: #000;
+    z-index: 1;
+   
+}
+.carousel-controls button{
+    position: relative;
+    overflow: hidden;
+   
+}
+.carousel-controls button:hover .layer{
+    animation-name: swipe;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+}
+.carousel-controls button span {
+    color: white;
+    transition: color 0.3s ease; 
+    z-index: 2;
+  }
+ 
+  .carousel-controls button:hover span {
+    color: black; 
+  }
+
+@keyframes swipe{
+    0%{
+        transform:translate(-100%) ;
+    }
+    100% {
+        transform:translate(0) ;
+    }
+}
+/*-------------------- Main About section ------------------*/
+main h6{
+    font-family:'Poppins', sans-serif ;
+}
+main p{
+    font-family:'Source Sans Pro', sans-serif;
+    color:#787878;
+    font-size: 22px;
+}
+main button{
+    padding: 15px 30px;
+    border: 1px solid grey;
+    font-size: 12px;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+main button:hover{
+    background-color: black;
+    color:white;
+}
+main span{
+    color:#00D5ED;
+}
+/*-------------------------- Team Section -------------------*/
+.letter {
+    position: absolute;
+    top:50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;       
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.05); 
+    z-index: 0;    
+  }
+  
+  section h2{
+    position: relative;
+    z-index: 1; 
+    font-size: 38px;
+    font-family:'Poppins', sans-serif ;
+  }
+  section h4{
+    font-size: 18px;
+    font-family:'Source Sans Pro', sans-serif ;
+    color: #787878;
+  }
+  .cards .card-item .layer{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#02c4dac8 ;
+    transform: translateY(100%);
+    
+    
+
+  }
+  .cards .card-item:hover .layer{
+    transform: translateY(0);
+    transition: transform 0.3s;
+
+  }
+  .card-item .text h4{
+    font-family:'Poppins', sans-serif  ;
+    font-size: 13px;
+
+  }
+  .card-item .text span{
+    font-family:'Poppins', sans-serif  ;
+    font-size: 12px;
+
+  }
+/*------------- Services section --------------*/
+.services{
+    margin-top: 100px;
+    padding-block: 100px;
+}
+.services .words h4{
+    font-size: 13px;
+    font-family:'Poppins', sans-serif  ;
+}
+.services .services-text li{
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-size: 16px;
+
+}
+
+.services-about span {
+    position: absolute;
+    top:5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;       
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.113);
+    z-index: 0; 
+  }
+  
+.services-about h2{
+    position: relative;
+    z-index: 1; 
+    font-size: 38px;
+    font-family:'Poppins', sans-serif ;
+  }
+  .services-about p{
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-size: 16px;
+  }
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+.delay-1{
+ animation-delay: 0.2s;
+ }
+.delay-2 {
+animation-delay: 0.4s;
+}
+.delay-3 {
+animation-delay: 0.6s;
+}
+.delay-4 {
+animation-delay: 0.8s;
+}
+.delay-5 {
+animation-delay: 1s;
+}
+.delay-6 {
+animation-delay: 1.2s;
+}
+.delay-7 {
+animation-delay: 1.4s;
+}
+ 
+/*services animation*/
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+  }
+  .img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translateY(50%);
+  }
+  
+  /*----------------Responsivness services section----------------*/
+  @media (min-width: 992px) {
+    .services-about span {
+      left: 0;                  
+      transform: translate(0, -50%);
+    }
+  }
+  /*---------------------------Prices Section--------------------------*/
+.prices-section{
+    padding-bottom: 150px;
+}
+.prices-section .prices-title h2{
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif ;
+    position: relative;
+    z-index: 1; 
+}
+.prices-section .prices-title h4{
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif  ;
+    color:#787878;
+}
+.prices-section .prices-title span {
+    position: absolute;
+    top:110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;       
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.056);
+    z-index: 0; 
+    }
+      
+  .prices-section h4{
+font-size: 13px;
+font-family: 'Poppins', sans-serif ;
+}
+.prices-section li{
+font-size: 16px;
+font-family: 'Source Sans Pro', sans-serif  ;
+color:#787878;
+}
+.prices-section span::selection{
+    color:white;
+    background-color: black;
+}
+.prices-section h2{
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif ;
+    transform: translateX(10px);
+}
+
+.prices-section button {
+    position: relative; 
+    overflow: hidden;   
+    padding: 9px 18px;
+    background-color: #00D5ED;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.prices-section button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 100%;
+    transform: skewX(-20deg);
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+}
+
+.prices-section button:hover::after {
+    left: 100%;
+    transition: left 0.7s ease;
+}
+
+  
+.prices-section .blue-header{
+    color: #00D5ED;
+}
+.prices-section .gold-tag button{
+    padding: 5px 10px;
+    background-color: #00D5ED;
+    border-radius: 50px;
+    border:none;
+    font-size: 10px;
+    box-shadow:rgba(0, 0, 0, 0.277),rgba(0, 0, 0, 0.287);
+}
+
+
+/*--------------------Customers Section---------------------*/
+.customers{
+position: relative; 
+align-items: center;  
+justify-content: center; 
+min-height: 100vh; }
+.customer{
+max-width: 650px;
+}
+.customer-content h4{
+font-size: 24px;
+font-family: 'Poppins', sans-serif ;
+}
+.customer-content span{
+font-size: 12px;
+font-family: 'Poppins', sans-serif ;
+color:#787878;
+}
+.customer-content span::selection{
+    color:white;
+    background-color: black;
+}
+.customer-content p{
+font-size: 18px;
+font-family: 'Source Sans Pro', sans-serif  ;
+color:#787878;
+}
+.customers h6{
+font-size: 13px;
+font-family: 'Poppins', sans-serif ;
+}
+/*---------------- carousel customers section -------------------*/
+#testimonialCarousel {
+max-width: 650px;  
+margin: 0 auto;
+position: relative;}
+ 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); 
+  width: 20px;
+  height: 20px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex !important; 
+  align-items: center;
+  justify-content: center;
+}
+.customers .carousel-indicators [data-bs-target] {
+  background-color: black;  
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.customers .carousel-indicators .active {
+  background-color:#00D5ED;    
+}
+/*-------------------footer----------------------*/
+footer span {
+position: absolute;
+top:160px;
+left: 25px;
+transform: translate(-50%, -50%);
+font-size: 70px;       
+font-weight: 700;
+color:rgba(0, 0, 0, 0.056);
+z-index: 0; 
+}
+  
+footer h2{
+position: relative;
+z-index: 1; 
+font-size: 38px;
+font-family:'Poppins', sans-serif ;
+}
+footer h4{
+font-size: 18px;
+font-family: 'Source Sans Pro', sans-serif  ;
+color:#787878;
+
+}
+footer label{
+    font-size: 13px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 500;
+}
+input{
+    padding-block: 30px;
+}
+.form-control {
+    padding-block: 15px; 
+    border-radius: 0;  
+    width: 90%;
+  }
+.form-control:focus {
+border-color: #000;    
+box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+.form-section{
+    padding-block: 150px;
+}
+footer button {
+    position: relative; 
+    overflow: hidden;   
+    padding:15px 45px;
+    background-color: #00D5ED;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+footer button::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 100%;
+    transform: skewX(-20deg);
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+}
+
+footer button:hover::after {
+    left: 100%;
+    transition: left 0.7s ease;
+    transition-delay: 0.1s;
+}
+
+
+
+
+
+
+.map-iframe {
+border: 0;
+height: 900px;   
+}
+
+/* Header Animation*/
+ @keyframes popUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+/* Maps Responsivness*/
+  @media (max-width: 768px) {
+    .map-iframe {
+      height: 400px; 
+    }
+
+  }
+  /* Gold card price section*/
+  @media (min-width: 992px) {  /* applies only on lg screens and up */
+    .prices-item.gold {
+      transform: translateY(-15px);
+      height: 500px;
+      background-color: white !important;
+    }
+    header h1{
+     
+    font-size: 100px;
+    
+}
+.header2 h1{
+     
+    font-size: 100px;
+    
+}
+  }
+  
+

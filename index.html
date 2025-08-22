@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> JS assignment 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+
+
+</head>
+<body>
+    <!--------------------------Navbar------------------------>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top overflow-hidden border-bottom p-0">
+        <div class="container">
+          <a class="navbar-brand fs-1 fw-bolder" href="#"> <div class="w-50"> <img src="images/logo-dark.png" class="w-100" alt="logo"> </div> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto fs-6" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#customers">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prices">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+          <div class="icons px-5 d-none d-lg-block ">
+            <i class="fa-brands fa-facebook-f px-2"></i>
+            <i class="fa-brands fa-twitter px-2"></i>
+            <i class="fa-brands fa-instagram px-2"></i>
+          </div>
+        </div>
+      </nav>
+
+    <!--------------------------Header------------------------------>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <header class="text-center">
+                <section class="header-title">
+                    <h1 class="fw-bolder text-white"> Create With Bezel. </h1>
+                    <h4 class="text-white fw-lighter"> We help ambitious companies create new value.</h4>
+                </section>
+                <section class="btns m-4">
+                    <button type="button" class="btn1 mx-2"> Hire Us</button>
+                    <button type="button" class="btn2"> Contact</button>
+        
+                </section>
+        
+            </header>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center header2">
+                <section class="header-title">
+                    <h1 class="  fw-bolder text-white"> Get Awesome. </h1>
+                    <h4 class="text-white fw-lighter"> We are an innovative company making digital comapny.</h4>
+                </section>
+                <section class="btns m-4">
+                    <button type="button" class="btn1 mx-2"> Read More</button>
+                    <button type="button" class="btn2"> Contact</button>
+        
+                </section>
+        
+            </div>
+          </div>
+          
+        </div>
+        <div class="controls">
+            <div class="carousel-controls d-none d-lg-block">
+                <button class="custom-control prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span>&larr;</span>
+                    <div class="layer"></div>
+                  </button>
+                  
+                  <button class="custom-control next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span>&rarr;</span>
+                    <div class="layer"></div>
+                  </button>
+                  
+                
+              </div>
+              
+              
+        </div>
+          
+      </div>
+   <!----------------------------About-------------------->
+    <div class="row justify-content-center border-bottom" id="about">
+        <main class="  container col-md-8 col-md-offset-2 pt-5 mt-5 text-center" >
+            <h6 class="fw-medium pb-2"> WHO WE ARE </h6>
+            <div> 
+                <p class="fw-lighter lh-base ">
+                    We are an innovative company. We develop and design <span class="words"> <span> Softwares</span> <!--<span> Websites</span> <span> Apps</span> --></span> for 
+                </p>
+        
+            <p class="fw-lighter pb-3 fs-5 lh-base"> customers around the world. Our clients are some of the most forward-looking companies in the world.</p>
+            </div>
+            <button type="button" class="mb-5"> READ MORE </button>
+        </main>
+    </div>
+    <!---------------------------Team--------------------------->
+    <section class=" container mt-5 position-relative mb-5" id="team">
+        <div class="title text-center pt-5">
+            <span class="letter"> C </span>
+            <h2 class="fw-bold"> Creative Team </h2>
+            <h4 class="fw-normal"> We are digital thinkers</h4>
+        </div>
+        <div class="cards row g-4 mt-5 ">
+            <div class="card-item col-md-6 col-lg-3 fade-in-up delay-1">
+                <div class="position-relative overflow-hidden">
+                    <img  class="w-100" src="images/team-1.jpg" alt="team1">
+                    <div class="layer d-flex flex-column justify-content-between">
+                        <div class="icons m-3">
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text m-3">
+                            <h4 class="fw-normal text-white mb-0"> Luke Cage </h4>
+                            <span class="fw-light text-white "> Founder & CEO</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-item col-md-6 col-lg-3 fade-in-up delay-2">
+               <div class="position-relative overflow-hidden">
+                    <img  class="w-100" src="images/team-2.jpg" alt="team1">
+                    <div class="layer d-flex flex-column justify-content-between">
+                        <div class="icons m-3">
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text m-3">
+                            <h4 class="fw-normal text-white mb-0">Jessica Johns </h4>
+                            <span class="fw-light text-white "> Product Designer</span>
+
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+            <div class="card-item col-md-6 col-lg-3 fade-in-up delay-3">
+                <div class="position-relative overflow-hidden">
+                    <img class="w-100" src="images/team-3.jpg" alt="team1">
+                    <div class="layer d-flex flex-column justify-content-between">
+                        <div class="icons m-3">
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text m-3">
+                            <h4 class="fw-normal text-white mb-0"> Matt Murdock</h4>
+                            <span class="fw-light text-white "> Lead Developer</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item col-md-6 col-lg-3 fade-in-up delay-4">
+                <div class="position-relative overflow-hidden">
+                    <img  class="w-100" class="w-100" src="images/team-4.jpg" alt="team1">
+                    <div class="layer d-flex flex-column justify-content-between">
+                        <div class="icons m-3">
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text m-3">
+                            <h4 class="fw-normal text-white mb-0"> Claire Temple </h4>
+                            <span class="fw-light text-white "> Sales Manager</span>
+
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--------------------------Services----------------------->
+    <section class="services bg-color " id="service">
+        <div class="words row  container m-auto text-center gy-5 ">
+            <div class="col-md-4 col-lg-2 pt-2 mt-25 mb-25 lh-base fade-in-up delay-1">
+                <h4 class="fw-medium text-white"> STUNNING DESIGN</h4>
+            </div>
+            <div  class="col-md-4 col-lg-2 pt-2 mt-25 mb-25 lh-base fade-in-up delay-2">
+                <h4 class="fw-medium text-white"> TIME SAVER </h4>
+            </div>
+            <div  class="col-md-4 col-lg-2  pt-2 mt-25 mb-25 lh-base fade-in-up delay-3">
+                <h4 class="fw-medium text-white "> CLEAN CODE</h4>
+            </div>
+            <div  class="col-md-4 col-lg-2 pt-2 mt-25 mb-25 lh-base fade-in-up delay-4">
+                <h4 class="fw-medium text-white">CUSTOMIZABLE</h4>
+            </div>
+            <div  class="col-md-4 col-lg-2 pt-2 mt-25 mb-25 lh-base fade-in-up delay-5">
+                <h4 class="fw-medium text-white"> PERFECT LAYOUT</h4>
+            </div>
+            <div  class="col-md-4 col-lg-2 pt-2 mt-25 mb-25 lh-base fade-in-up delay-6">
+                <h4 class="fw-medium text-white"> RETINA READY</h4>
+            </div>
+
+
+        </div>
+        <div class="services-text row  g-0 container pt-5 pb-5 m-auto mt-5">
+            <div class="services-about col-lg-4 text-center text-lg-start position-relative fade-in-up delay-1">
+                <span class="services-letter"> W </span>
+                <h2 class="fw-bold text-white"> What We Do.</h2>
+                <p class="lh-lg text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsam ullam incidunt itaque nemo omnis temporibus totam quibusdam repellat vero, recusandae excepturi dignissimos velit et alias amet, quia facilis perferendis. </p>
+            </div>
+            <div class="services-list  col-sm-6 col-lg-3 offset-lg-2 mt-3 ">
+                <ul>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-2"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Research </li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-3"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Opportunity Analysis </li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-4"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Consulting </li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-5"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Brand Plannig</li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-6"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Cusomer Support</li>
+                </ul>
+            </div>
+            <div class="services-list  col-sm-6 col-lg-3 mt-3  ">
+                <ul>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-3"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Logo&Branding</li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-4"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Style guides </li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-5"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Motion graphics </li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-6"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> UX/UI-design </li>
+                    <li class="lh-lg text-white list-unstyled fw-light p-1 fade-in-up delay-7"><i class="fa-regular fa-circle-check fa-xs" style="color: #ffffff;"></i> Social media design</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </section>
+    
+   
+    <!---------------------------Prices--------------------------->
+   <section class="prices-section bg-plain" id="prices">
+    <div class="container" >
+        <div class=" prices-title text-center pt-5 position-relative">
+            <span> C</span>
+            <h2 class="pt-5 fw-bold lh-base">Cheap prices </h2> 
+            <h4 class="lh-base"> We provide the best quality.</h4>
+        </div>
+        <div class="prices-cards row gy-4 gx-4 mt-5">
+            <div class="prices-item col-md-6 col-lg-3">
+                <div class="inner bg-white p-5">
+                    <h4 class="fw-lighter text-black">Starter</h4>
+                    <div class="border-bottom">
+                        <span> $ </span>
+                        <h2> 9</h2>
+                    </div>
+                    <div>
+                        <ul class="pt-4 text-start ps-0 pb-4">
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Connections</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>24/7 Support</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Full SSL Protection</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Channels</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="text-white"> Sign Up</button>
+                    </div>
+
+                
+
+                </div>
+            </div>
+            <div class="prices-item col-md-6 col-lg-3">
+                <div class="inner bg-white p-5">
+                    <h4 class="fw-lighter text-black">Silver</h4>
+                    <div class="border-bottom">
+                        <span> $ </span>
+                        <h2> 19</h2>
+                    </div>
+                    <div>
+                        <ul class="pt-4 text-start ps-0 pb-4">
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Connections</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>24/7 Support</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Full SSL Protection</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Channels</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="text-white"> Sign Up</button>
+                    </div>
+
+                
+
+                </div>
+            </div>
+            <div class="prices-item gold col-md-6 col-lg-3">
+                <div class="inner bg-white p-5">
+                    <div class="gold-tag d-flex justify-content-between">
+                    <h4 class="fw-lighter text-black">Gold</h4>
+                    <button type="button" class="text-white">BEST VALUE</button>
+                    </div>
+                    <div class="border-bottom">
+                        <span class="blue-header" > $ </span>
+                        <h2 class="blue-header"> 29</h2>
+                    </div>
+                    <div>
+                        <ul class="pt-4 text-start ps-0 pb-4">
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Connections</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>24/7 Support</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Full SSL Protection</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Channels</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="text-white"> Sign Up</button>
+                    </div>
+
+                
+
+                </div>
+            </div>
+            <div class="prices-item col-md-6 col-lg-3">
+                <div class="inner bg-white p-5">
+                    <h4 class="fw-lighter text-black">platinum</h4>
+                    <div class="border-bottom">
+                        <span> $ </span>
+                        <h2> 49</h2>
+                    </div>
+                    <div>
+                        <ul class="pt-4 text-start ps-0 pb-4">
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Connections</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>24/7 Support</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Full SSL Protection</span></li>
+                            <li class="list-unstyled fw-light lh-lg"> <span>Unlimited Channels</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="text-white"> Sign Up</button>
+                    </div>
+
+                
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+   </section>
+   
+    <!--chatgpt <section class="prices container bg-plain py-5" id="prices">
+        <div class="prices-title text-center mb-4">
+          <h2>Cheap Prices</h2>
+          <h4>We provide the best quality.</h4>
+        </div>
+        <div class="prices-cards">
+          <div class="row g-3 px-3 px-md-5">
+      
+           
+            <div class="card-item col-md-6 col-lg-3">
+              <div class="card  bg-white  d-flex flex-column">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="text-black fw-lighter">Starter</h4>
+                  <div class="border-bottom d-flex align-items-center">
+                    <span class="dollar">$</span>
+                    <h2 class="ps-2 translate">9</h2>
+                  </div>
+                  <ul class="text-start p-0 pt-3 lh-lg flex-grow-1">
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Connections</li>
+                    <li class="list-unstyled p-1 fw-lighter">24/7 Support</li>
+                    <li class="list-unstyled p-1 fw-lighter">Full SSL Protection</li>
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Channels</li>
+                  </ul>
+                  <button class="text-white " type="button"> Sign Up </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="card-item col-md-6 col-lg-3">
+              <div class="card bg-white d-flex flex-column">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="text-black fw-lighter">Starter</h4>
+                  <div class="border-bottom d-flex align-items-center">
+                    <span class="dollar">$</span>
+                    <h2 class="ps-2 translate">9</h2>
+                  </div>
+                  <ul class="text-start p-0 pt-3 lh-lg flex-grow-1">
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Connections</li>
+                    <li class="list-unstyled p-1 fw-lighter">24/7 Support</li>
+                    <li class="list-unstyled p-1 fw-lighter">Full SSL Protection</li>
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Channels</li>
+                  </ul>
+                  <button class="btn btn-dark text-white mt-auto" type="button">Sign Up</button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="card-item col-md-6 col-lg-3">
+              <div class="card bg-white  d-flex flex-column">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="text-black fw-lighter">Starter</h4>
+                  <div class="border-bottom d-flex align-items-center">
+                    <span class="dollar">$</span>
+                    <h2 class="ps-2 translate">9</h2>
+                  </div>
+                  <ul class="text-start p-0 pt-3 lh-lg flex-grow-1">
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Connections</li>
+                    <li class="list-unstyled p-1 fw-lighter">24/7 Support</li>
+                    <li class="list-unstyled p-1 fw-lighter">Full SSL Protection</li>
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Channels</li>
+                  </ul>
+                  <button class="btn btn-dark text-white mt-auto" type="button">Sign Up</button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="card-item col-md-6 col-lg-3">
+              <div class="card bg-white  d-flex flex-column">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="text-black fw-lighter">Starter</h4>
+                  <div class="border-bottom d-flex align-items-center">
+                    <span class="dollar">$</span>
+                    <h2 class="ps-2 translate">9</h2>
+                  </div>
+                  <ul class="text-start p-0 pt-3 lh-lg flex-grow-1">
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Connections</li>
+                    <li class="list-unstyled p-1 fw-lighter">24/7 Support</li>
+                    <li class="list-unstyled p-1 fw-lighter">Full SSL Protection</li>
+                    <li class="list-unstyled p-1 fw-lighter">Unlimited Channels</li>
+                  </ul>
+                  <button class="btn btn-dark text-white " type="button">Sign Up</button>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section> 
+    -->
+     <!-- My code <section class="prices container bg-danger  ">
+        <div class="prices-title text-center">
+            <h2> Cheap Prices</h2>
+            <h4> We provide the best quality.</h4>
+        </div>
+        <div class="prices-cards">
+            <div class="cards row g-4 px-3 px-md-5">
+                <div class="card-item col-md-6 col-lg-3 bg-white border border-1 border-black  h-100">
+                    <h4 class="text-black fw-lighter">starter</h4>
+                    <div class="border-bottom">
+                        <span class="dollar">$</span>
+                        <h2 class="ps-2 translate">9</h2>
+                    </div>
+                    <ul class="text-start p-0 pt-3 lh-lg">
+                        <li class="list-unstyled p-1 fw-lighter ">
+                            <span>Unlimited Connections</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>24/7 Support</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Full SSL Protection</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Unlimited Channels</span>
+                        </li>
+                    </ul>
+                    <button class="text-white " type="button"> Sign Up </button>
+
+
+                </div>
+                <div class="card-item col-md-6 col-lg-3 bg-white border border-1 border-black">
+                    <h4 class="text-black fw-lighter">starter</h4>
+                    <div class="border-bottom">
+                        <span class="dollar">$</span>
+                        <h2 class="ps-2 translate">9</h2>
+                    </div>
+                    <ul class="text-start p-0 pt-3 lh-lg">
+                        <li class="list-unstyled p-1 fw-lighter ">
+                            <span>Unlimited Connections</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>24/7 Support</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Full SSL Protection</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Unlimited Channels</span>
+                        </li>
+                    </ul>
+                    <button class="text-white " type="button"> Sign Up </button>
+
+
+                </div>
+                <div class="card-item col-md-6 col-lg-3 bg-white border border-1 border-black">
+                    <h4 class="text-black fw-lighter">starter</h4>
+                    <div class="border-bottom">
+                        <span class="dollar">$</span>
+                        <h2 class="ps-2 translate">9</h2>
+                    </div>
+                    <ul class="text-start p-0 pt-3 lh-lg">
+                        <li class="list-unstyled p-1 fw-lighter ">
+                            <span>Unlimited Connections</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>24/7 Support</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Full SSL Protection</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Unlimited Channels</span>
+                        </li>
+                    </ul>
+                    <button class="text-white " type="button"> Sign Up </button>
+
+
+                </div>
+                <div class="card-item col-md-6 col-lg-3 bg-white border border-1 border-black">
+                    <h4 class="text-black fw-lighter">starter</h4>
+                    <div class="border-bottom">
+                        <span class="dollar">$</span>
+                        <h2 class="ps-2 translate">9</h2>
+                    </div>
+                    <ul class="text-start p-0 pt-3 lh-lg">
+                        <li class="list-unstyled p-1 fw-lighter ">
+                            <span>Unlimited Connections</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>24/7 Support</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Full SSL Protection</span>
+                        </li>
+                        <li class="list-unstyled p-1 fw-lighter">
+                            <span>Unlimited Channels</span>
+                        </li>
+                    </ul>
+                    <button class="text-white " type="button"> Sign Up </button>
+
+
+                </div>
+                
+                
+
+            </div>
+        </div>
+
+    </section> -->
+    
+    <!----------------------------Customers---------------------->
+   <section class="customers bg-plain pt-5" id="customers">
+        <div class="text-center "> 
+            <h6 class="fw-medium"> HAPPY CUSTOMERS</h6>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          
+          
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          </div>
+      
+          
+          <div class="carousel-inner">
+            
+            
+            <div class="carousel-item active">
+              <div class="text-center">
+                <div class="img mx-auto mb-2">
+                  <img src="images/testimonial-1.jpg" class="d-block" alt="Testimonial1">
+                </div>
+                <div class="customer m-auto bg-white pt-5 p-5">
+                  <div class="customer-content text-center p-4"> 
+                    <h4 class="fw-bold text-black">Marissa Mayer</h4>
+                    <span class="fw-medium mb-5">CEO , YAHOO</span>
+                    <p class="fw-lighter mt-3 lh-base">
+                      Quo rem cumque facere modi beatae. Deleniti nisi, repellat quae aspernatur 
+                      consequatur consequuntur, fugit asperiores delectus beatae. Quae veniam,
+                      quidem cupiditate quia? Ut iste deleniti.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="carousel-item">
+              <div class="text-center">
+                <div class="img mx-auto mb-2">
+                  <img src="images/testimonial-2.jpg" class="d-block" alt="Testimonial2">
+                </div>
+                <div class="customer m-auto bg-white pt-5 p-5">
+                  <div class="customer-content text-center p-4"> 
+                    <h4 class="fw-bold text-black">Mark Zuckerberg</h4>
+                    <span class="fw-medium mb-5">FOUNDER & CEO , FACEBOOK</span>
+                    <p class="fw-lighter mt-3 lh-base">
+                      Consectetur adipisicing elit. Perspiciatis aperiam quaerat iure veritatis fugit debitis,
+                      repellat aut accusantium culpa ipsum ex ipsa blanditiis recusandae, sit similique,
+                      eius assumenda porro pariatur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+      
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon d-none d-lg-block"></span>
+          </button>
+          <button class="carousel-control-next  " type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon d-none d-lg-block"></span>
+          </button>
+      
+        </div>
+      </section>
+
+    <!------------------------- Footer section------------------------->
+    <footer class="container-fluid" id="footer">
+        <div class="row ">
+          <div class="col-lg-6 mb-2 me-5 p-0">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.638606401799!2d31.255423575234207!3d29.961072074965582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584782ead906cd%3A0x6feb36b41789dfff!2sRoute%20academy!5e0!3m2!1sen!2seg!4v1753484372191!5m2!1sen!2seg" 
+               style="border:0;" allowfullscreen="" 
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-iframe w-100 ">
+            </iframe>
+          </div>
+          <div class=" form-section col-lg-5 ms-md-5 position-relative ">
+            <span class="fw-bold ">G</span>
+            <h2 class="fw-bold ">Get In Touch</h2>
+            <h4 class=" ">Let's work together.</h4>
+            
+            <form class="mt-4">
+              <div class="mb-4">
+                <label> Your name</label>
+                <input type="text" class="form-control" >
+              </div>
+              <div class="mb-4">
+                <label> Your email</label>
+                <input type="email" class="form-control" >
+              </div>
+              <div class="mb-4">
+                <label> Phone number</label>
+                <input type="tel" class="form-control">
+              </div>
+              <div class="mb-4">
+                <label> Your message</label>
+                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="text-white fw-bold px-4">Send message</button>
+            </form>
+          </div>
+          
+        </div>
+      </footer>
+      
+      <script src="bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
